@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Seres Viktor">
+    <meta name="copyright" content="Csak oktatási célokra">
+    <meta name="description" content="A Viktorlandia Nemzeti Múzeumának parkolójának elérhetőségeit tartalmazza és visszajelzéseket fogad az oldal.">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="jquery-3.7.1.js"></script>
+    <script src="jquery-validation-1.19.5/dist/jquery.validate.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#myform").validate({
+            rules: {
+                email: {
+                    required: true,
+                    email: true
+                },
+                datum: {
+                    required: true,
+                },
+			    ertekeles: {
+                    required: true,
+                },
+                fizetoauto: {
+                    required: true,
+                },
+            },
+            messages: {
+                datum: " Kérlek add meg a látogatás dátumát!",
+                email: " Kérlek valós email címet adj meg!",
+				ertekeles: " Kérlek adj meg egy számot az értékeléshez!",
+                fizetoauto: " Kérlek jelölj be egy opciót!",
+             },
+        });
+    });
+
+        </script>
+    
+    <title>Visszajelzés és Elérhetőségek</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Visszajelzés és Elérhetőségek</h1>
+        <nav>
+            <ul>
+                <li><a href="fooldal.html">Főoldal</a></li>
+                <li><a href="automoso.html">Automosó</a></li>
+                <li><a href="muzeum.html">Nemzeti Múzeum</a></li>
+                <li><a class="active" href="#">Visszajelzés és Elérhetőségek</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        
+        <article class="auto_muze_vissz">
+            <h2 class="cikkcim">Viktorlandia Nemzeti Múzeum Parkolója</h2>
+            <h3>Cím:</h3>
+            <p class="tartalom">Viktorlandia főváros, Múzeum tér 1. (múzeum udvara) (5000 Viktorlandia)</p>
+            <h3>Telefon::</h3>
+            <p class="tartalom">+36 1 234 5679</p>
+            <h3>E-mail:</h3>
+            <p class="tartalom">parkolo@viktorlandianemzetimuzeum.hu</p>  
+        </article>
+        
+        <aside class="auto_muze_vissz">
+            
+            <h2 class="cikkcim">Parkoló Ügyfélszolgálat - Nyitvatartás</h2>
+            <p>Hétfő - Péntek: 8:00 - 22:00<br><br>Szombat: 9:00 - 20:00<br><br>Vasárnap: 9:00 - 18:00</p>
+        </aside>
+
+        <article class="auto_muze_vissz kep">
+            <h2>Csapatunk</h2>
+                <img src="kepek/staff.png" alt="Kép a Múzeum Parkolójának személyzetéről">
+        </article>
+
+
+        <aside class="urlap">
+            <h2 class="cikkcim">Visszajelzés</h2>
+            <p class="tartalom">Köszönjük, hogy kitölti a múzeum parkolójának visszajelzését, mely nagyban hozzájárul a szolgáltatásaink fejlesztéséhez és segít abban, hogy még jobb felhasználói élményt nyújthassunk látogatóinknak!</p>
+            <form method="post" action="https://rf.uni-corvinus.hu/webfejlesztes/receive.php" id="myform">
+                <label for="email"><p>E-mail cím: <input type="email" name="email" size="30" maxlength="50" id="email"></p></label>
+
+                <label for="datum"><p>Látogatás időpontja: <input type="datetime-local" name="datum" id="datum"></p></label>
+
+                <label for="ertekeles">    
+                    <p>Egy 1-10-es skálán hogyan értékelné a parkolót összeségében? <br><input type="number" min="1" max="10" step="1" name="ertekeles" id="ertekeles"></p>
+                    <p>Hogyan értékelné a fizetőautomaták használhatóságát? <br>Használhatatlan<input type="range" min="1" max="10" step ="1" name="fieztoauto">Teljes mértékben jól működnek</p>
+                </label>
+
+                <label> 
+                    <p>Ön szerint elég parkolóhely van jelenleg?<br><input type="radio" name="Igen" checked>Igen <input type="radio" name="Nem" >Nem</p>
+                </label>
+
+                <label> <input class="gomb" type="submit" value="Elküldés" name="kuld"></label>
+                <label> <input class="gomb" type="reset" value="Alaphelyzet" name="alap"></label>
+            </form>
+ 
+    </div>
+    <footer>Készült Viktorlandia Kormánya megbízásából</footer>
+</body>
+</html>

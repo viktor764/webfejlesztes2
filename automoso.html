@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Seres Viktor">
+    <meta name="copyright" content="Csak oktatási célokra">
+    <meta name="description" content="A Viktorlandia Nemzeti Múzeumának parkolójában találhat autómosóról szól az oldal tartalma">
+    <link rel="stylesheet" href="style.css">
+    <title>Greenline</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>GreenLine clean automosó</h1>
+        <nav>
+            <ul>
+                <li><a href="fooldal.html">Főoldal</a></li>
+                <li><a class="active" href="#">Automosó</a></li>
+                <li><a href="muzeum.html">Nemzeti Múzeum</a></li>
+                <li><a href="visszajelzes.html">Visszajelzés és Elérhetőségek</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        
+        <article class="auto_muze_vissz">
+            <h2 class="cikkcim">Miért válaszd a GreenLinet?</h2>
+            <ul>
+                <li><p>A GreenLine Clean autómosó a fenntarthatóság jegyében működik, mindössze 1 liter vízzel végzi el a tisztítást, miközben más módszerek akár 150 litert is felhasználhatnak.</p></li>
+                <li><p>Az autómosás során alkalmazott nanotechnológiás tisztítószerek nemcsak hatékonyak, hanem környezetbarátak is, így nem kell aggódni a káros vegyi anyagok miatt.</p></li>
+            </ul>
+        </article>
+        
+        <aside class="auto_muze_vissz">
+            <h2 class="cikkcim">Nyitva tartás és megközelítés</h2>
+            <ul>
+                <li><p>Nyitva: 0-24 óráig, minden nap</p></li>
+                <li><p>Megközelítés: A Múzeum Mélygarázsba a Dózsa György útról lehet behajtani, a Damjanich és a Dembinszky utca közötti szakaszon.</p></li>
+            </ul>
+            
+        </aside>
+ 
+        <article class="auto_muze_vissz">
+            <h2 class="cikkcim">Víztakarékos és környezetkímélő autómosó nyílt a városligeti Múzeum Mélygarázsban: 5000Ft kedvezmény az új felhasználóknak!</h2>
+                <p class="tartalom">A GreenLine Clean autómosóban a járművek tisztítása kézzel történik, 99.9%-ban biológiailag lebomló nanotechnológián alapuló tisztítószerekkel. Ennek köszönhetően minden mosás alkalmával 150 helyett mindössze 1 liter vizet használnak fel, és a hagyományos mosással szemben jóval fényesebbek és hosszabb ideig ápoltak maradnak az autók.</p>
+                <p class="tartalom">A kényelmes és időtakarékos használatot segíti a myGreenLine applikáció, ahol egy 5000Ft-os kedvezmény vár a LIGET5000 kuponkóddal!</p>
+
+ 
+            <h3>Részletesen a Greenline-ról</h3>
+                <p class="tartalom">Európában az elsők között kínálnak kiemelten víztakarékos és környezetkímélő megoldást a különböző méretű gépjárművek tisztítására. Az autók takarítása kézzel történik, erre a célra kifejlesztett, nanotechnológián alapuló tisztítószerekkel, amelyek 99,9%-ban biológiailag lebomlanak. Azok a felületek, amiket ezzel az eljárással szabadítanak meg a különféle szennyeződésektől, a hagyományos mosással szemben, jóval fényesebbek lesznek és egy speciális védőrétegnek köszönhetően hosszabb ideig ápoltak maradnak. Így a mosóinkban megforduló autók egytől-egyig patyolat tisztán távozhatnak.</p>
+
+            <h3>Időpontfoglalás</h3>
+                <p class="tartalom">Az időpontfoglalás a jobb oldalon található formson keresztül vagy a MyGreenLine applikáció segítségével történik: a MyGreenLine alkalmazást az AppStoreból vagy a Play Áruházból lehet letölteni.</p>
+
+                <p class="tartalom"><i>„A tisztítást mi intézzük. Amíg te dolgozol, tárgyalsz, ügyeket intézel, kitakarítjuk az autódat.”</i></p>
+        </article>
+        <aside class="urlap">
+            <form method="post" action="https://rf.uni-corvinus.hu/webfejlesztes/receive.php">
+                <label><p class="tartalom">Teljes név: <input type="text" name="name" size="30" maxlength="50"></p></label>
+
+                <label><p class="tartalom">E-mail cím: <input type="email" name="email" size="30" maxlength="50"></p></label>
+
+                <label><p class="tartalom">Időpont:<input type="datetime-local" name="datum"></p></label>
+                <label>    
+                <p class="tartalom">Kedvezmények:
+                    
+                    <select size="1" name="kedvezmeny" id="kedvezmeny">
+                     <option selected>Teljesárú</option>
+                     <option>33 %-os nyugdíjas kedvezmény</option>
+                     <option>25% %-os diák kedvezmény</option>
+                     <option>25%-os nagycsaládos kedvezmény</option>
+                    </select>
+                </p>
+                </label>
+                <label> 
+                <p class="tartalom">Mosás típusa<br>
+                    <input type="radio" name="tipus" value="kb" id="kulsobelso" checked>Külső és belső tisztítás (6000Ft)<br>
+
+                    <input type="radio" name="tipus" value="k" id="kulso">Külső tisztítás (2000 Ft)<br>
+
+                    <input type="radio" name="tipus" value="b" id=>Belső tisztítás (4000 Ft)
+                </p>
+                </label>
+                <label> 
+                <p class="tartalom">
+                    Egyéb extrák<br>
+                    <input type="checkbox" name="polir" value="ON" id="polir">Polírozás (10000 Ft)<br>
+                    <input type="checkbox" name="borjav" value="ON" id="borjav">Bőrjavítás(8000 Ft)<br>
+                    <input type="checkbox" name="viasz" value="ON" id="viasz">Viasz használata(1000 Ft)<br>
+                    <input type="checkbox" name="muanyagjav" value="ON" id="muanyag">Külső műanyag javítás(6000 Ft)<br>
+
+                </p>
+                </label>
+                <p class="tartalom">Összesen: <input size=8 type="text" value="" id="osszeg"> Ft <input class="gomb" type="button" value="Kiszámol" id="szamol"> </p>
+                <label> <input class="gomb" type="submit" value="Elküldés" name="kuld"></label>
+                <label> <input class="gomb" type="reset" value="Alaphelyzet" name="alap"></label>
+            </form>
+            <script src="script/script2.js">
+            </script>
+        </aside>
+        
+    </div>
+    <footer>Készült Viktorlandia Kormánya megbízásából</footer>
+</body>
+</html>
