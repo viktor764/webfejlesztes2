@@ -1,0 +1,24 @@
+Név: Seres Viktor
+URL: 
+Rövid leírás: Az oldalam a kitalált ország Viktorlandia Nemzeti Múzeumának parkolójának weboldala. Négy oldalból áll, az első magának a parkolónak a bemutatása, a második a parkolóban lévő automosó bemutatása, a harmadik a Múzeum bemutatása, a negyedik pedig a parkoló elérhetősége és a visszajelzések fogadása.
+JS kód(ok): Két JS kódom van. Az első a Főoldalon (fooldal.html (script.js)) található a második pedig az automosó oldalán(automoso.html(script2.js)) található.
+            A script.js a parkolás díját számolja, annak fügvényében, hogy a felhasználó hány órát szeretne parkolni, illetve, hogy bankkártyával fizet-e. Ha a felhasználó nem egy 0-nál nagyobb számot add meg, vagy a bankkártyás kérdésnél nem jelöli be egyik opciót sem akkor az oldal alert formában hibaüzenetet mutat. A végeredményt egészre kerekítve adja meg. Ezek mellett a kiszámol gomb betűszínét és háttérszínét változatja. 
+
+            A script2.js az automosás árát számolja ki. Figyelembe veszi a kedvezményeket és azt, hogy a "Mosás típusa" és az "Egyéb Extrak" feliratok alatt milyen opciókat választott ki a felhasználó. A végeredményt egészre kerekítve adja meg.
+
+Google webfont:font-family: "Tinos", serif;
+                link: https://fonts.google.com/specimen/Tinos?query=tinos
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+
+
+Nem vettem át kódot
+
+Tartalmi hivatkozások:
+                        hatter.jpg-- https://www.autonavigator.hu/cikkek/800-ferohelyes-garazs-nyilt-a-varosliget-szelen/
+                        Összes melygarazs.png-- https://ligetbudapest.hu/projekt/muzeum-melygarazs-varosliget
+                        fooldal.html és automoso.html szovegek-- https://ligetbudapest.hu/latogatas/muzeum-melygarazs?gad_source=1&gclid=CjwKCAiA0rW6BhAcEiwAQH28ImKkVAvY-iccaR95svESuKXEePisfyDw1ApVlkZ8BZMf9gblDWyiCxoCF5AQAvD_BwE
+                        muzeum.html szovegek-- https://chatgpt.com/ "Generálj szöveget a kitalált ország(Viktorlandia) nemzeti Múzeumának oldalára"
+                        staff.png-- https://www.canva.com/

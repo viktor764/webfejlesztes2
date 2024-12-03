@@ -1,0 +1,236 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+body {
+    background-image: url("kepek/hatter.jpg");
+    padding: 0px;
+    margin: 0px;
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container>* {
+			height: fit-content;
+            margin: 1%;
+    
+}
+
+/*Tagek*/
+
+header {
+    padding: 2px;
+    margin: 0px;
+    background-color: #1A213D;
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+}
+
+article {
+    flex: 1 1 100%;
+    background-color: #1A213D;
+    padding: 8px;
+    color: white;
+    text-align: left;
+    border-radius: 15px;
+    
+}
+
+
+aside {
+    flex: 1 1 100%;
+    background-color: #C09054;
+    padding: 8px;
+    color: white;
+    text-align: left;
+    border-radius: 15px;
+}
+
+
+footer {
+    background-color: #1A213D;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+}
+
+/*Menu*/
+
+nav {
+    padding: 8px;
+    flex: 1 1 100%;
+    
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+nav li a {
+    display: block;
+    padding: 8px;
+    margin-bottom: 12px;
+    color: #F5C832;
+    background-color:#1A213D;
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav ul li a.active {
+    background-color:#5C6873;
+}
+
+nav li a:hover {
+    background-color: #5C6873;
+}
+
+/* KEPEK */
+
+.slider {
+    width: 100%;
+    margin: auto;
+}
+
+.slick-slide {
+    margin: 0px 5px;
+}
+
+.slick-slide img {
+    width: 100%;
+    margin: 10px auto;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
+
+.slick-slide {
+    transition: all ease-in-out .3s;
+    opacity: .2;
+}
+
+.slick-active {
+    opacity: .5;
+}
+
+.slick-current {
+    opacity: 1;
+}
+
+img{
+    width: 90%;
+    height: auto;
+}
+
+/* OSZTALYOK */
+
+article.infok{
+    background-color: #C09054;
+}
+h2.cikkcim {
+    display: table;
+    text-align: left;
+}
+
+p.tartalom {
+    padding: 5px;
+    
+}
+
+/* muzeum szincsere */
+article.auto_muze_vissz.masodik{
+    background-color: #C09054;
+}
+aside.auto_muze_vissz.masodik{
+    background-color: #1A213D;
+}
+article.auto_muze_vissz.kep{
+    text-align: center;
+}
+
+/* form gombok*/
+.gomb{
+    color: #F5C832;
+    background-color: #1A213D;
+    padding: 5px;
+    cursor:pointer;
+    border-radius: 5px;
+}
+/*Hibauzenet*/
+label.error {
+    color: #FB3A3A; 
+    }
+    
+
+/*RESZPONZIV*/
+
+@media all and (min-width: 600px) {
+    /*tablet*/
+    
+}
+
+@media all and (min-width: 768px) {
+    /*számítógép*/
+    .slider {
+        width: 35%;
+        margin:auto;
+    }
+    aside.fooldal{
+        flex-basis: 33%;
+    }
+    article.fooldal {
+        flex-basis: 61%;
+    }
+
+
+    aside.urlap{
+        flex-basis: 48%;
+    }
+
+    aside.auto_muze_vissz{
+        flex-basis: 48%;
+    }
+    article.auto_muze_vissz{
+        flex-basis: 48%;
+    }
+
+    
+    article.auto_muze_vissz.masodik{
+        background-color: #1A213D;
+    }
+    aside.auto_muze_vissz.masodik{
+        background-color: #C09054;
+    }
+
+
+
+
+    
+    
+    
+}
